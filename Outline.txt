@@ -1,0 +1,49 @@
+* Outline
+
+  - What are doing here?
+  - What do we want to teach?
+  - What are our desired outcomes for the day?
+
+** WordPress II
+   1. Prerequisites: WordPress I (Intro to WordPres)
+   2. Duration: 4 hours? 6 hours?
+
+** Questions to Answer
+   1. Review WordPress Themes
+   2. What is a Child Theme?
+   3. How do I make one?
+   4. What files do I need?
+   5. Where do I develop it?
+   6. How do I get it out to my WP site?
+   7. Migrating database changes (schema and data)
+   9. How do I keep it up to date?
+   10. What tools can I use to help me?
+   11. Can I use Sass to build my theme, too?
+
+** Start Small
+   - start with one of the WP core themes
+   - create the child theme dir
+   - create the styles.css file
+   - create the functions.php file
+   - pick the theme
+   - SUCCESS!!
+
+** Go deeper
+   - pick your own starter theme
+   - start the child theme
+   - making sure the child is WP customizable
+   - adding widgets, content areas (sidebars, etc)
+
+** Working locally, deploying "out there"
+   - tools you can use
+   - setting up your workflow
+   - maintain version control
+   - testing with different version of PHP, WordPress
+   - building a distribution, deploying it
+
+** A little PHP
+   - in more depth on WP PHP function
+
+
+** CSS pre- and post-processing
+   - integrating with Node.js tools
