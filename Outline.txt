@@ -10,21 +10,27 @@
 
 ** Questions to Answer
    1. Review WordPress Themes
+      a. Review database vs. file output and the role a theme plays
+      b. WordPress Template Hierarchy – what it is, how it works, why it's important
+      c. How the Template Hierarchy relates to content. How it determines content output.
    2. What is a Child Theme?
+      a. How this relates to the template hierarchy
+      b. Why would I need one?
    3. How do I make one?
-   4. What files do I need?
-   5. Where do I develop it?
-   6. How do I get it out to my WP site?
-   7. Migrating database changes (schema and data)
-   9. How do I keep it up to date?
-   10. What tools can I use to help me?
-   11. Can I use Sass to build my theme, too?
+      a. What files do I need (minimum)? 
+      b. What files are possible?
+   4. Where do I develop it?
+   5. How do I get it out to my WP site?
+   6. Migrating database changes (schema and data)
+   7. How do I keep it up to date?
+   8. What tools can I use to help me?
+   9. Can I use Sass to build my theme, too?
 
 ** Start Small
    - start with one of the WP core themes
    - create the child theme dir
    - create the styles.css file
-   - create the functions.php file
+   - create the functions.php file (maybe)
    - pick the theme
    - SUCCESS!!
 
