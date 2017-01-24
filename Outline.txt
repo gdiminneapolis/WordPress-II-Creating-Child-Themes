@@ -1,12 +1,131 @@
 * Outline
 
-  - What are doing here?
-  - What do we want to teach?
-  - What are our desired outcomes for the day?
+ ** What are our desired outcomes for the day?
+  To have a working understading of building a functional Child Theme using the following three things:
+ - Basic understanding of WordPress file and database structure
+ - Working understanding of WordPress Template Hierarchy
+ - Basic understanding of WordPress Loop
+ - Informed ways to find themes and plugins to work with
+ 
 
 ** WordPress II
    1. Prerequisites: WordPress I (Intro to WordPres)
    2. Duration: 4 hours? 6 hours?
+
+
+1. WordPress the CMS vs WordPress the Framework
+    1. CMS - works out of the box to manage content
+    2. Framework - extensible tools/functions we can use to build on top of it
+2. Databases & Files
+    1. Content vs presentation
+        1. Content goes in database and presentation is files
+            1. Media File caveat - lol these are both
+        2. “Content Management System”
+        3. Rather than pages, we’re talking about templates
+            1. Page - content
+            2. Template - content output logic
+    2. WordPress Files
+        1. WordPress Core vs. WP Content
+            1. Here is core, Don’t touch core
+            2. WP Content: Themes folder, plugins folder, uploads folder (also languages and upgrades and maybe some custom plugin stuff)
+        2. Brief note on WP Config - set up when installed
+            1. Contains your DB info, table prefix, all sorts of useful stuff
+            2. Controls stuff like debug, etc.
+            3. Add the WP DEBUG True
+        3. WordPress Themes: 
+            1. WordPress template files are a combination of HTML and WordPress PHP functions
+            2. Specific naming convention and structure we will learn about later
+    3. WordPress Databases
+        1. MySQL database
+            1. WordPress is optimized for the “LAMP” stack
+        2. Structured Data
+            1. Specific Table Structure, plugins may add custom tables
+        3. Why databases are different than files
+            1. Needs a server to run
+            2. Not version controlled (in the typical ways)
+            3. Local/Production URLs, etc. and scrubbing
+            4. Migration and data overwrite issues
+            5. Special tools (queries) to access, same template could access different data
+3. The Loop/Query
+    1. What is it (wordpress and programming terms)
+    2. WP Database queries
+    3. Sample loop with markup
+4. WordPress Content Output Functions
+    1. Basic ones and what they are (title, excerpt, author, content, post thumbnail)
+    2. How to find the rest of them
+5. Template Hierarchy
+    1. What is it
+        1. How the template cascade/fallback works
+    2. How the loop relates to the template hierarchy
+        1. Each template has an implied query
+    3. How themes use it
+    4. Look at a couple sample templates and try to read them together (single vs archive)
+    5. How child themes use it
+        1. Why child themes work
+        2. Don’t have to copy everything, just do what you need
+6. Structure of a child theme
+    1. Style.css
+        1. loads after styles of the parent theme (following the cascade/specificity)
+        2. Loads after the parent theme but before plugins
+        3. can be build as is or compiled using a preprocessor, etc.
+    2. Functions.php
+        1. loads in addition to/after parent functions.php
+        2. Loads after all plugins
+    3. Templates
+        1. Override the parent template of the same name
+    4. Screenshot
+        1. Shows up in the admin to look nice :)
+7. Set up a child theme
+    1. Folder structure & files
+    2. Theme Header
+    3. How to install/activate
+8. Style.css
+    1. Let’s change colors!
+    2. Play with it for a while
+    3. Just like CSS everywhere else
+9. Templates
+    1. Some super basic PHP syntax 
+        1. opening/closing
+        2. semicolons
+        3. colon/curly bracket notation
+    2. Try to copy a template and modify it!
+    3. What The File - plugin to identify which template you are loading
+10. Functions.php
+    1. What it’s used for
+    2. The philosophy of what to include in theme vs plugin
+    3. Show a more complex site with more organized functions.php
+11. Plugin Template Overrides
+    1. Some plugins will allow template overrides
+    2. This works exactly like their instructions say in your child theme
+    3. Examples (WooCommerce, EDD?, Events Calendar)
+12. How To Migrate (basic)
+    1. 2 elements: move files, move database
+    2. Files: FTP/SFTP, Git, Backup thingy
+    3. Database: Manually, Database Migration Tool
+    4. A tool we can use: Duplicator
+        1. How to get your database info for Duplicator
+13. Finding Themes and Plugins
+    1. The good and bad of wordpress is things can be done a million ways
+    2. Core Themes & plugins
+    3. WP.org themes
+    4. Community Involvement (company or developer)
+    5. Core committers
+    6. Reviews and Support
+    7. Premium vs. Free
+    8. WordPress News Sources
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ** Questions to Answer
    1. Review WordPress Themes
